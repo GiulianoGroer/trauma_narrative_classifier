@@ -1,0 +1,17 @@
+name: ptsd_narratives
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.13
+  - numpy=2.1.3
+  - pandas=2.3.1
+  - scipy=1.16.3
+  - scikit-learn=1.7.2
+  - jupyter
+  - pip
+  # Only needed for the analyses that use the unshared narrative text
+  # (first-person parsing). Not needed to run the public release:
+  # - pip:
+  #     - spacy==3.8.14
+  # After installing spacy, run:  python -m spacy download de_core_news_lg
+  # (the reported results used de_core_news_lg 3.8.0)
